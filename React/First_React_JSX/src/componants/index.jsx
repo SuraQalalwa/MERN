@@ -13,8 +13,7 @@ class Dojo extends Component {
                     <li>Feed the dogs</li>
                 </ul>
             </div>            
-        )
-            ;    
+        );    
         }
     }
 export default Dojo;
