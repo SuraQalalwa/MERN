@@ -51,7 +51,7 @@ console.log(namess)
 
 
 // an array with just the names of the pokémon whose only type is poison
-const namesss = pokémon.filter(p => p.types.includes("poison")).map(pok => pok.name)
+const namesss = pokémon.filter(p => p.types==("poison")).map(pok => pok.name)
 console.log(namesss)
 
 
