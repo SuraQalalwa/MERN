@@ -2,7 +2,7 @@ import React, {Component} from "react";
 
 class Dojo extends Component { 
     state = {
-        dojos:["Learn React","Climb Mt Evereset","Run a marathon","Feed the dogs","hhh"]
+        dojos:["Learn React","Climb Mt Evereset","Run a marathon","Feed the dogs"]
       }
         render() {        
             return( 
