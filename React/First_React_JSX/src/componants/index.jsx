@@ -1,17 +1,15 @@
 import React, {Component} from "react";
 
-class Dojo extends Component {    
+class Dojo extends Component { 
+    state = {
+        dojos:["Learn React","Climb Mt Evereset","Run a marathon","Feed the dogs","hhh"]
+      }
         render() {        
             return( 
             <div>
                 <h1 className="my-class">Hello Dojo!</h1>
                 <h4 className="my-class">Things I need to do:</h4>
-                <ul className="my-class">
-                    <li>Learn React</li>
-                    <li>Climb Mt Evereset</li>
-                    <li>Run a marathon</li>
-                    <li>Feed the dogs</li>
-                </ul>
+                <ul className="my-class">{this.state.dojos.map(x=><li key={x}>{x}</li>)}</ul>
             </div>            
         );    
         }
