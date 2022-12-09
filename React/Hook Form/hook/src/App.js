@@ -1,6 +1,4 @@
-// import logo from './logo.svg';
 import './App.css';
-// import createUser from './components/userForm'
 import UserForm from './components/userForm';
 
 function App() {
