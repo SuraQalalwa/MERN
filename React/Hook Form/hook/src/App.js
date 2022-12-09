@@ -6,7 +6,6 @@ import UserForm from './components/userForm';
 function App() {
   return (
     <div className="App">
-      {/* <createUser></createUser> */}
       <UserForm/>
     </div>
   );
