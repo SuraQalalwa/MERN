@@ -70,19 +70,19 @@ return(
         <label>First Name: </label> 
         <input type="text"  onChange={ handlefirstName } />
             {
-                        firstNameError ?
-                        <p style={{color:'red'}}>{ firstNameError }</p> :
-                        ''
-                    }
+                firstNameError ?
+                <p style={{color:'red'}}>{ firstNameError }</p> :
+                ''
+            }
     </div>
     <div>
         <label>Last Name: </label> 
         <input type="text" onChange={handlelastName}  />
     {
-                        lastNameError ?
-                        <p style={{color:'red'}}>{ lastNameError }</p> :
-                        ''
-                    }
+        lastNameError ?
+        <p style={{color:'red'}}>{ lastNameError }</p> :
+        ''
+    }
     </div>
     <div>
         <label>Email Address: </label> 
