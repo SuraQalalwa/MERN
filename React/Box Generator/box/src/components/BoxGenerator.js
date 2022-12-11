@@ -10,7 +10,6 @@ const BoxGenerator = props => {
                 text: generatedBox
                 };
 
-                setGeneratedBox('');
         props.onNewBox(boxNew);
             }
 
