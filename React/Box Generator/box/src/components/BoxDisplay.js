@@ -4,8 +4,8 @@ import './BoxDisplay.css'
 const BoxDisplay = (props) => {
     return (
         <ul className='boxs-list'>
-        {props.box.map(x => {
-            return <li key={x.id} style={}></li>;
+        {props.box.map((x,id) => {
+            return <li key={id} style={{backgroundColor:x.text}}></li>;
         })}
         </ul>
     );

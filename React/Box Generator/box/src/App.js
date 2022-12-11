@@ -5,9 +5,7 @@ import './App.css';
 
 
 function App() {
-  const [boxNew, setBoxNew] = useState([
-    {id: '1', text: 'box'}
-  ]);
+  const [boxNew, setBoxNew] = useState([]);
 
   const addbox = ( newBox ) => {
     setBoxNew( boxNew.concat(newBox) );

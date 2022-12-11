@@ -6,7 +6,7 @@ const BoxGenerator = props => {
             event.preventDefault();
 
             const boxNew ={
-                id: Math.random().toString(),
+                // id: Math.random().toString(),
                 text: generatedBox
                 };
 
@@ -16,11 +16,12 @@ const BoxGenerator = props => {
 
         const colorHandler= event=>{
             setGeneratedBox(event.target.value);
-        }
+                }
+                
 return (
     <div>
         <form onSubmit={addBoxHandler}>
-            <input type= "text" value = {generatedBox} onChange={colorHandler}/>
+            <input type= "text" onChange={colorHandler} />
             <input type= "submit" value="Add Box"/>
         </form>
     </div>
