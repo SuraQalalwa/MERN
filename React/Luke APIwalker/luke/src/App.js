@@ -5,8 +5,7 @@ import People from './components/People';
 import Planet from './components/Planet';
 
 
-function App() {
-  
+function App() {  
   return (
     <div className="App">
           <Choice/>
