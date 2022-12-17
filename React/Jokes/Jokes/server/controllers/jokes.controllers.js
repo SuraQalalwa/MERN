@@ -12,7 +12,7 @@ module.exports.createJokes=(req,res)=>{
         .catch((err)=> res.json({message: "Something went wrong", error:err}))
 };
 module.exports.updatejoke = (req, res) => {
-    User.findOneAndUpdate({ _id: req.params.id }, req.body, { new: true })
+    Jokes.findOneAndUpdate({ _id: req.params.id }, req.body, { new: true })
         .then(updatedJoke => res.json({ joke: updatedJoke }))
         .catch(err => res.json({ message: "Something went wrong", error: err }));
     };
@@ -23,7 +23,7 @@ module.exports.deletejoke=(req,res)=>{
 };
 module.exports.getjoke=(req,res)=>{
     Jokes.findOne({_id:req.params.id})
-        .then((joke)=>res.json({joke: joke}))
+        .then(joke=>res.json({joke: joke}))
         .catch(err=>res.json({message: "Somthing went wrong", error:err}))
     };
 
