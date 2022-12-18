@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-mongoose.set('strictQuery', true)
+mongoose.set('strictQuery', false)
 const ManagerSchema = new mongoose.Schema({
     title: {type: String,required: true},
     price: {type: Number,required: true},

@@ -7,7 +7,7 @@ export default () =>{
     const [price, setPrice] = useState("");
     const creatProject = e =>{
         e.preventDefault();
-        axios.post("http://localhost:8000/api/new",{
+        axios.post("http://localhost:8000/",{
             title: title,
             description: description,
             price: price
