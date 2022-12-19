@@ -11,7 +11,7 @@ const Main= (props) => {
                 setProducts(res.data);
                 setLoaded(true);})
         .catch(err => console.error(err));
-    },[]);
+    },[products]);
     const removeFromList= productId=>{
         setProducts(products.filter(products => products._id !== productId));
     }
