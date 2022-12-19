@@ -12,11 +12,14 @@ const Main= (props) => {
                 setLoaded(true);})
         .catch(err => console.error(err));
     },[]);
+    const removeFromList= productId=>{
+        setProducts(products.filter(products => products._id !== productId));
+    }
     return (
         <div>
         <ProductManagerForm/>
         <hr/>
-        {loaded && <ManagersList products = {products} />}
+        {loaded && <ManagersList products = {products} removeFromList={removeFromList} />}
         </div>
     )
 }

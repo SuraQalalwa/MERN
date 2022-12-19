@@ -5,6 +5,6 @@ module.exports = function (app) {
     app.post('/', ManagerController.creatManager);
     app.get('/', ManagerController.AllProductManager);
     app.get('/product/:id', ManagerController.getOneProduct);
-    // app.use('/manager/:id/edit', ManagerController);
-    // app.use('/manager/:id/delete', ManagerController);
+    app.put('/product/:id', ManagerController.updateProduct);
+    app.delete('/product/:id', ManagerController.deleteProduct);
 }
