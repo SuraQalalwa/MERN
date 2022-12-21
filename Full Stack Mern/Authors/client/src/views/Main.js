@@ -21,8 +21,8 @@ export default () => {
     },[author]); 
     const createAuthor = author => {
         axios.post('http://localhost:8000/', author)
-            .then(res=>{setAuthor([...author, res.data]);})
-              navigate("/")
+            .then(res=>{setAuthor([...author, res.data]);navigate("/")})
+              
             .catch(err=>{
               const errorResponse =err.response.data.errors;
               const errorArr=[];
@@ -36,7 +36,7 @@ export default () => {
         }
   return (
     <div>
-      <AuthorForm onSubmitProp={createAuthor} errors = {errors}initialName=""/>
+      <AuthorForm onSubmitProp={createAuthor} errors = {errors} initialName=""/>
       {/* {loaded && <AuthorList author={author}/>} */}
     </div>
   )

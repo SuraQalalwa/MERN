@@ -24,7 +24,6 @@ const styles = {
 export default (props)=> {
     const { initialName,onSubmitProp } = props;
     const [name, setName]=useState(initialName);
-    const [errors, setErrors] = useState([]);
     const onSubmitForm=e=>{
         e.preventDefault();
         onSubmitProp({name})
