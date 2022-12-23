@@ -10,7 +10,7 @@ const SenderForm = (props) => {
 
 return (
     <div>
-        <h1>enter youer name</h1>
+        <h1>Enter your Name:</h1>
         <form onSubmit={onSubmitForm}>
             <input type="text" value={username} onChange={e=>setUserName(e.target.value)}/>
             <input type="submit" value="Send" />

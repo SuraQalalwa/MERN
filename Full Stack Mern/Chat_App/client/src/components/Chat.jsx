@@ -16,12 +16,12 @@ const Chat = (props) => {
   const handel=e=>{
     e.preventDefault();
     // socket.emit("chat",txt)
-    socket.emit("chat",txt)
+    socket.emit("chat",props.username+": "+txt)
 
   }
   return (
     <div>
-      {msg.map((msg,i)=><p key={i}>{props.username} - {msg}</p>)}
+      {msg.map((msg,i)=><p key={i}>{msg}</p>)}
       <form onSubmit={handel}>
         <input type="text" onChange={e=>setTxt(e.target.value)}/>
           <input type="submit" value="send"/>

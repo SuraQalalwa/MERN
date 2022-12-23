@@ -3,11 +3,11 @@ import Chat from '../components/Chat'
 import SenderForm from '../components/SenderForm'
 
 const Main = () => {
-    const [username, setUserName]=useState('')
+    const [name, setName]=useState('')
 
   return (
     <div>
-        {!username? <SenderForm fun={(name)=>setUserName(name)}/>:<Chat username={username}/>}
+        {!name? <SenderForm fun={(ename)=>setName(ename)}/>:<Chat username={name}/>}
     </div>
   )
 }
